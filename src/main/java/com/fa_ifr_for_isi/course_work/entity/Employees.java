@@ -27,9 +27,6 @@ public class Employees {
     @ManyToOne(fetch = FetchType.LAZY)
     private Departments department;
 
-    @OneToOne(mappedBy = "employee")
-    private OldPasswords oldPasswords;
-
     @OneToMany(mappedBy = "employee")
     @JsonIgnore
     private List<Reports> reportsList = new ArrayList<>();

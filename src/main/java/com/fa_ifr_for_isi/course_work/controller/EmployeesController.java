@@ -63,7 +63,6 @@ public class EmployeesController {
             employees.setUsername(employeesUpdate.getUsername());
             employees.setPassword(employeesUpdate.getPassword());
             employees.setDepartment(employeesUpdate.getDepartment());
-            employees.setOldPasswords(employeesUpdate.getOldPasswords());
             employees.setReportsList(employeesUpdate.getReportsList());
             employeesService.update(employees);
             return new ResponseEntity<>(employees, HttpStatus.OK);
