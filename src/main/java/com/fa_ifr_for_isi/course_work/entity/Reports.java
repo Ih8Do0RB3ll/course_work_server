@@ -21,6 +21,8 @@ public class Reports {
 
     private LocalDate creation_date;
 
+    private String report_description;
+
     @ManyToOne(fetch = FetchType.LAZY)
     private Employees employee;
 

@@ -66,6 +66,7 @@ public class ReportsController {
             //reports.setDepartment_id(reportsUpdate.getDepartment_id());
             reports.setDangerLevel(reportsUpdate.getDangerLevel());
             reports.setErrors(reportsUpdate.getErrors());
+            reports.setReport_description(reportsUpdate.getReport_description());
             reportsService.update(reports);
             return new ResponseEntity<>(reports, HttpStatus.OK);
         }).orElseThrow(() -> new IllegalArgumentException());
